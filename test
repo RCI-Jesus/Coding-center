@@ -1,0 +1,96 @@
+npm start
+
+.Button {
+  padding: 20px;
+}
+
+import React, { Component } from 'react';
+import './Button.css'; // Tell webpack that Button.js uses these styles
+
+class Button extends Component {
+  render() {
+    // You can use them as regular CSS styles
+    return <div className="Button" />;
+  }
+}
+import React from 'react';
+import logo from './logo.png'; // Tell webpack this JS file uses this image
+
+console.log(logo); // /logo.84287d09.png
+
+function Header() {
+  // Import result is the URL of your image
+  return <img src={logo} alt="Logo" />;
+}
+
+export default Header;
+
+import { ReactComponent as Logo } from './logo.svg';
+
+function App() {
+  return (
+    <div>
+      {/* Logo is an actual React component */}
+      <Logo />
+    </div>
+  );
+}
+
+npm install --save graphql graphql.macro
+
+import { loader } from 'graphql.macro';
+
+const query = loader('./foo.graphql');
+
+query {
+    hello {
+      world
+    }
+  }
+
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+  const moduleA = 'Hello';
+
+export { moduleA };
+
+import React, { Component } from 'react';
+
+class App extends Component {
+  handleClick = () => {
+    import('./moduleA')
+      .then(({ moduleA }) => {
+        // Use moduleA
+      })
+      .catch(err => {
+        // Handle failure
+      });
+  };
+
+  render() {
+    return (
+      <div>
+        <button onClick={this.handleClick}>Load</button>
+      </div>
+    );
+  }
+}
+
+export default App;
+
+npm install bootstrap
+
+npx create-react-app my-app --template typescript
+
+"scripts": {
+    "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache"
+  }
+  
+  npm install -g serve
+serve -s build
+
+console.log("Hello World");
+
+
+
+
