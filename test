@@ -88,8 +88,14 @@ npx create-react-app my-app --template typescript
   
   npm install -g serve
 serve -s build
-
+npm install my-app
 console.log("Hello World");
+
+} 
+
+npm server - install 
+
+"scripts": { " reacts-scripts -- inspect -brk test -- runInBand --cache"
 
 
 
